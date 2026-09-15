@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — ChromeKeePass</title>
+  <meta name="description" content="Privacy policy for the ChromeKeePass browser extension and website.">
+  <link rel="canonical" href="https://chromekeepass.com/privacy/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/"><span class="brand-mark small">K</span><span>ChromeKeePass</span></a>
+      <a class="nav-cta" href="/">Back home</a>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container legal-shell">
+      <a class="back-link" href="/">← Back to ChromeKeePass</a>
+      <div class="eyebrow">LEGAL</div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: September 15, 2026</p>
+
+      <p>ChromeKeePass is designed to keep password generation, form assistance, and KeePass communication local to your device. ChromeKeePass does not operate a cloud service for storing your passwords or credentials.</p>
+
+      <h2>Data processed by the extension</h2>
+      <p>To provide its core features, ChromeKeePass may locally process the current website URL, login identifiers such as usernames or email addresses, passwords returned by your local KeePass database, password-field metadata, and nearby signup-form text. This processing is used only to find matching KeePass entries, fill credentials when requested, and detect when to offer a secure password suggestion.</p>
+
+      <h2>KeePass integration</h2>
+      <p>ChromeKeePass communicates only with the KeePassHttp service configured on your own computer, normally through <code>127.0.0.1</code> or <code>localhost</code>. Requests containing credential-related fields are encrypted using the KeePassHttp association key before being sent to the local service. ChromeKeePass does not send KeePass credentials to ChromeKeePass servers.</p>
+
+      <h2>Password generation</h2>
+      <p>Generated passwords are created locally in your browser using the browser's cryptographic random number generator. Generated passwords are not transmitted to ChromeKeePass servers. When you choose to use or copy a generated password, it may be inserted into the active form and/or written to your device clipboard.</p>
+
+      <h2>Signup form detection</h2>
+      <p>The extension locally inspects password input fields, field metadata, and limited nearby page text to determine whether a page appears to contain an account-creation form. This information is not sent to ChromeKeePass servers.</p>
+
+      <h2>Local storage</h2>
+      <p>ChromeKeePass uses Chrome local extension storage to keep extension preferences and KeePassHttp association information, including the local endpoint, association identifier, cryptographic association key, and related connection settings. ChromeKeePass does not intentionally store your KeePass passwords or website credentials in its local extension storage.</p>
+
+      <h2>Clipboard</h2>
+      <p>ChromeKeePass may write a password to your clipboard when you explicitly use a copy action or when the password-generation workflow attempts to make the newly generated password available for copying. Clipboard contents are handled locally by your device.</p>
+
+      <h2>Remote code and analytics</h2>
+      <p>ChromeKeePass does not load or execute remote JavaScript or WebAssembly code. The extension does not include advertising, analytics, or third-party tracking services.</p>
+
+      <h2>Data sharing and sale</h2>
+      <p>ChromeKeePass does not sell user data. ChromeKeePass does not transfer user data to third parties for advertising, creditworthiness, lending, or purposes unrelated to the extension's core functionality.</p>
+
+      <h2>Website</h2>
+      <p>The ChromeKeePass website is a static website and does not intentionally collect personal information, create user accounts, or include advertising or analytics scripts by default. The hosting provider may process standard technical request logs such as IP address, browser type, requested URL, and request time for security, reliability, and abuse prevention.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>This policy may be updated when ChromeKeePass changes. If a future version adds cloud synchronization, analytics, or other data-processing features, this policy will be updated before those features are released.</p>
+    </div>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

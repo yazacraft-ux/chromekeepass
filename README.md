@@ -14,6 +14,6 @@ Point the domain to GitHub Pages according to GitHub's current custom-domain ins
 ## Before releasing the Chrome extension
 Update:
 - The “Coming soon” buttons on `index.html`.
-- `privacy.html` with the extension's exact permissions/data handling.
+- `privacy/index.html` (public URL: `https://chromekeepass.com/privacy/`) with the extension's exact permissions/data handling.
 - `terms.html` if needed.
 - Add the Chrome Web Store URL to the header and hero.
