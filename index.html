@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ChromeKeePass — KeePass for Chrome, made simple</title>
+  <meta name="description" content="A clean Chrome companion for KeePass. Fast access to your credentials, simple browser integration, and a privacy-first approach.">
+  <meta name="theme-color" content="#0b0f0d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ChromeKeePass — KeePass for Chrome, made simple">
+  <meta property="og:description" content="A clean Chrome companion for KeePass. Fast access to your credentials with a privacy-first approach.">
+  <meta property="og:url" content="https://chromekeepass.com/">
+  <meta property="og:image" content="https://chromekeepass.com/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://chromekeepass.com/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="ChromeKeePass home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none"><rect x="3" y="3" width="30" height="30" rx="10" fill="currentColor" opacity=".12"/><path d="M12.5 16.2v-2.1a5.5 5.5 0 0 1 11 0v2.1" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><rect x="10" y="16" width="16" height="12" rx="4" stroke="currentColor" stroke-width="2.3"/><circle cx="18" cy="22" r="1.5" fill="currentColor"/></svg>
+        </span>
+        <span>ChromeKeePass</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+      <a class="nav-cta" href="#early-access">Coming soon</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span> Chrome extension coming soon</div>
+          <h1>Your KeePass vault.<br><span>Right in Chrome.</span></h1>
+          <p class="hero-lead">ChromeKeePass is a lightweight browser companion designed to make using KeePass on the web faster, cleaner and easier.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#early-access">Get notified <span>→</span></a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <div class="trust-row">
+            <span><i>✓</i> No cloud account planned</span>
+            <span><i>✓</i> Privacy-first</span>
+            <span><i>✓</i> Built for KeePass</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="ChromeKeePass extension preview">
+          <div class="browser-card">
+            <div class="browser-top">
+              <span></span><span></span><span></span>
+              <div class="address">accounts.example.com</div>
+            </div>
+            <div class="demo-page">
+              <div class="demo-logo">ACME</div>
+              <div class="login-card">
+                <p class="mini-label">Welcome back</p>
+                <div class="field"><span>Email</span><b>ben@example.com</b></div>
+                <div class="field"><span>Password</span><b>••••••••••••</b></div>
+                <div class="fake-button">Sign in</div>
+              </div>
+            </div>
+            <div class="extension-popover">
+              <div class="pop-head">
+                <div class="mini-mark">K</div>
+                <div><strong>ChromeKeePass</strong><small>Vault connected</small></div>
+                <span class="status"></span>
+              </div>
+              <div class="site-match">
+                <small>Match for this site</small>
+                <div class="credential">
+                  <div class="avatar">B</div>
+                  <div><strong>ben@example.com</strong><span>accounts.example.com</span></div>
+                  <button aria-label="Fill credentials">↗</button>
+                </div>
+              </div>
+              <div class="pop-foot"><span>🔒 Local connection</span><b>Open KeePass</b></div>
+            </div>
+          </div>
+          <div class="float-chip chip-one">⚡ One-click fill</div>
+          <div class="float-chip chip-two">🔐 Your vault stays yours</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos-strip">
+      <div class="container strip-inner">
+        <span>Made for a simple workflow</span>
+        <b>KEEPass</b><i>+</i><b>CHROME</b><i>→</i><b>LOGIN</b>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">THE BASICS, DONE RIGHT</div>
+          <h2>Less friction between your vault and the web.</h2>
+          <p>ChromeKeePass is being designed around the actions you use every day — finding the right login and filling it quickly.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card featured">
+            <div class="icon">⚡</div>
+            <h3>Fast autofill</h3>
+            <p>Find matching credentials for the current website and fill your login without breaking your flow.</p>
+            <div class="mini-ui">
+              <span class="site-dot">G</span>
+              <div><small>github.com</small><strong>ben@example.com</strong></div>
+              <b>Fill →</b>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🔎</div>
+            <h3>Quick search</h3>
+            <p>Search your vault from a focused extension popup without digging through windows.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🛡️</div>
+            <h3>Privacy-first</h3>
+            <p>The project is being built around local vault access instead of creating another password cloud.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">⌨️</div>
+            <h3>Keyboard friendly</h3>
+            <p>Designed for speed with a compact interface and a workflow that stays out of your way.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🌐</div>
+            <h3>Website matching</h3>
+            <p>Surface the entries that make sense for the website you're visiting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head centered">
+          <div class="eyebrow">HOW IT WILL WORK</div>
+          <h2>Three steps. That's it.</h2>
+        </div>
+        <div class="steps">
+          <article><span>01</span><h3>Install the extension</h3><p>Add ChromeKeePass to Chrome once the first public version is released.</p></article>
+          <div class="step-line"></div>
+          <article><span>02</span><h3>Connect your vault</h3><p>Pair the browser companion with your supported KeePass setup.</p></article>
+          <div class="step-line"></div>
+          <article><span>03</span><h3>Fill your logins</h3><p>Open a website, choose the matching entry and fill your credentials.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section security">
+      <div class="container security-card">
+        <div>
+          <div class="eyebrow">BUILT AROUND YOUR VAULT</div>
+          <h2>Your password manager should stay your password manager.</h2>
+          <p>ChromeKeePass is intended to act as a browser companion, not replace your KeePass database with another account or hosted vault.</p>
+        </div>
+        <div class="security-list">
+          <div><span>01</span><p><b>No forced account</b><small>No separate ChromeKeePass account is planned.</small></p></div>
+          <div><span>02</span><p><b>Minimal permissions</b><small>We aim to request only what the extension needs.</small></p></div>
+          <div><span>03</span><p><b>Clear privacy policy</b><small>How data is handled will be documented before release.</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section early" id="early-access">
+      <div class="container">
+        <div class="early-card">
+          <div class="glow"></div>
+          <div class="eyebrow light"><span class="dot"></span> IN DEVELOPMENT</div>
+          <h2>ChromeKeePass is coming back,<br>built for a cleaner experience.</h2>
+          <p>The new Chrome extension is in preparation. Bookmark this page and check back for the first release.</p>
+          <button class="btn btn-light" type="button" id="copyUrl">Copy website URL</button>
+          <small id="copyState">chromekeepass.com</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section">
+      <div class="container faq-grid">
+        <div class="section-head"><div class="eyebrow">FAQ</div><h2>Good to know.</h2></div>
+        <div class="accordion">
+          <details open><summary>Is the Chrome extension available now?<span>+</span></summary><p>Not yet. The new ChromeKeePass extension is currently in preparation. The download button will appear here when it is published.</p></details>
+          <details><summary>Is ChromeKeePass affiliated with Google?<span>+</span></summary><p>No. ChromeKeePass is an independent project and is not affiliated with or endorsed by Google.</p></details>
+          <details><summary>Will ChromeKeePass replace KeePass?<span>+</span></summary><p>No. The goal is to provide a convenient browser companion for a KeePass-based workflow.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand" href="/"><span class="brand-mark small">K</span><span>ChromeKeePass</span></a><p>A simpler bridge between KeePass and Chrome.</p></div>
+      <div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/sitemap.xml">Sitemap</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> ChromeKeePass.</span><span>Independent project. Not affiliated with Google.</span></div>
+  </footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
