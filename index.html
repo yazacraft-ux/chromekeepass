@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ChromeKeePass — KeePass for Chrome, made simple</title>
-  <meta name="description" content="A clean Chrome companion for KeePass. Fast access to your credentials, simple browser integration, and a privacy-first approach.">
+  <title>ChromeKeePass — KeePass autofill & secure passwords for Chrome</title>
+  <meta name="description" content="ChromeKeePass connects Chrome to your local KeePass setup, fills matching credentials, generates strong passwords locally, and suggests passwords on signup forms.">
   <meta name="theme-color" content="#0b0f0d">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ChromeKeePass — KeePass for Chrome, made simple">
-  <meta property="og:description" content="A clean Chrome companion for KeePass. Fast access to your credentials with a privacy-first approach.">
+  <meta property="og:title" content="ChromeKeePass — KeePass autofill & secure passwords for Chrome">
+  <meta property="og:description" content="Use KeePass credentials in Chrome, generate strong passwords locally, and get secure password suggestions on signup forms.">
   <meta property="og:url" content="https://chromekeepass.com/">
   <meta property="og:image" content="https://chromekeepass.com/assets/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
@@ -16,6 +16,19 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"ChromeKeePass",
+    "applicationCategory":"BrowserApplication",
+    "operatingSystem":"Google Chrome",
+    "softwareVersion":"0.3.0",
+    "description":"A Chrome companion for KeePass with credential filling, local password generation, and signup password suggestions.",
+    "url":"https://chromekeepass.com/",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+  }
+  </script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -32,7 +45,7 @@
         <a href="#how">How it works</a>
         <a href="/privacy/">Privacy</a>
       </nav>
-      <a class="nav-cta" href="#early-access">Coming soon</a>
+      <a class="nav-cta" href="#release">Web Store · Under review</a>
       <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -40,6 +53,7 @@
     <div class="mobile-menu" aria-hidden="true">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
+      <a href="#release">Release status</a>
       <a href="/privacy/">Privacy</a>
     </div>
   </header>
@@ -48,17 +62,17 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="dot"></span> Chrome extension coming soon</div>
+          <div class="eyebrow"><span class="dot review-dot"></span> Version 0.3 submitted to the Chrome Web Store</div>
           <h1>Your KeePass vault.<br><span>Right in Chrome.</span></h1>
-          <p class="hero-lead">ChromeKeePass is a lightweight browser companion designed to make using KeePass on the web faster, cleaner and easier.</p>
+          <p class="hero-lead">ChromeKeePass fills matching KeePass credentials, generates strong passwords locally, and offers secure password suggestions directly on signup forms.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#early-access">Get notified <span>→</span></a>
-            <a class="btn btn-ghost" href="#how">See how it works</a>
+            <a class="btn btn-primary" href="#release">Chrome Web Store · Under review <span>→</span></a>
+            <a class="btn btn-ghost" href="#features">Explore features</a>
           </div>
           <div class="trust-row">
-            <span><i>✓</i> No cloud account planned</span>
-            <span><i>✓</i> Privacy-first</span>
-            <span><i>✓</i> Built for KeePass</span>
+            <span><i>✓</i> Local password generation</span>
+            <span><i>✓</i> Local KeePassHttp connection</span>
+            <span><i>✓</i> No ads or analytics</span>
           </div>
         </div>
 
@@ -91,34 +105,34 @@
                   <button aria-label="Fill credentials">↗</button>
                 </div>
               </div>
-              <div class="pop-foot"><span>🔒 Local connection</span><b>Open KeePass</b></div>
+              <div class="pop-foot"><span>🔒 Local KeePass connection</span><b>Fill</b></div>
             </div>
           </div>
           <div class="float-chip chip-one">⚡ One-click fill</div>
-          <div class="float-chip chip-two">🔐 Your vault stays yours</div>
+          <div class="float-chip chip-two">✨ Generator works without KeePass</div>
         </div>
       </div>
     </section>
 
     <section class="logos-strip">
       <div class="container strip-inner">
-        <span>Made for a simple workflow</span>
-        <b>KEEPass</b><i>+</i><b>CHROME</b><i>→</i><b>LOGIN</b>
+        <span>One extension, two useful workflows</span>
+        <b>KEEPASS</b><i>+</i><b>CHROME</b><i>→</i><b>FILL & GENERATE</b>
       </div>
     </section>
 
     <section class="section" id="features">
       <div class="container">
         <div class="section-head">
-          <div class="eyebrow">THE BASICS, DONE RIGHT</div>
-          <h2>Less friction between your vault and the web.</h2>
-          <p>ChromeKeePass is being designed around the actions you use every day — finding the right login and filling it quickly.</p>
+          <div class="eyebrow">READY FOR CHROME</div>
+          <h2>Passwords that fit naturally into your browser.</h2>
+          <p>ChromeKeePass combines a local KeePass companion with a standalone password generator, so it stays useful whether your vault is connected or not.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card featured">
             <div class="icon">⚡</div>
-            <h3>Fast autofill</h3>
-            <p>Find matching credentials for the current website and fill your login without breaking your flow.</p>
+            <h3>Fast KeePass autofill</h3>
+            <p>Find matching credentials for the current website and fill the username and password you select.</p>
             <div class="mini-ui">
               <span class="site-dot">G</span>
               <div><small>github.com</small><strong>ben@example.com</strong></div>
@@ -126,24 +140,24 @@
             </div>
           </article>
           <article class="feature-card">
-            <div class="icon">🔎</div>
-            <h3>Quick search</h3>
-            <p>Search your vault from a focused extension popup without digging through windows.</p>
+            <div class="icon">✨</div>
+            <h3>Secure password generator</h3>
+            <p>Create strong random passwords locally using your browser's cryptographic random number generator — even without KeePass connected.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🧩</div>
+            <h3>Smart signup suggestions</h3>
+            <p>When ChromeKeePass detects a new-password field, it can offer a secure password directly beside the form and fill confirmation fields too.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🔐</div>
+            <h3>Local KeePassHttp bridge</h3>
+            <p>Connect to KeePassHttp running on your own computer through localhost or 127.0.0.1.</p>
           </article>
           <article class="feature-card">
             <div class="icon">🛡️</div>
-            <h3>Privacy-first</h3>
-            <p>The project is being built around local vault access instead of creating another password cloud.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon">⌨️</div>
-            <h3>Keyboard friendly</h3>
-            <p>Designed for speed with a compact interface and a workflow that stays out of your way.</p>
-          </article>
-          <article class="feature-card">
-            <div class="icon">🌐</div>
-            <h3>Website matching</h3>
-            <p>Surface the entries that make sense for the website you're visiting.</p>
+            <h3>Privacy-first by design</h3>
+            <p>No ChromeKeePass cloud vault, no advertising, no analytics, and no third-party tracking in the extension.</p>
           </article>
         </div>
       </div>
@@ -152,15 +166,15 @@
     <section class="section how" id="how">
       <div class="container">
         <div class="section-head centered">
-          <div class="eyebrow">HOW IT WILL WORK</div>
-          <h2>Three steps. That's it.</h2>
+          <div class="eyebrow">HOW IT WORKS</div>
+          <h2>Useful immediately. Better with KeePass.</h2>
         </div>
         <div class="steps">
-          <article><span>01</span><h3>Install the extension</h3><p>Add ChromeKeePass to Chrome once the first public version is released.</p></article>
+          <article><span>01</span><h3>Install ChromeKeePass</h3><p>The extension package is complete and currently awaiting Chrome Web Store approval.</p></article>
           <div class="step-line"></div>
-          <article><span>02</span><h3>Connect your vault</h3><p>Pair the browser companion with your supported KeePass setup.</p></article>
+          <article><span>02</span><h3>Generate passwords anywhere</h3><p>Use the built-in local generator or accept secure suggestions on account-creation forms without connecting KeePass.</p></article>
           <div class="step-line"></div>
-          <article><span>03</span><h3>Fill your logins</h3><p>Open a website, choose the matching entry and fill your credentials.</p></article>
+          <article><span>03</span><h3>Connect KeePass when you want</h3><p>With KeePassHttp running locally, ChromeKeePass can find matching entries and fill login credentials on the active website.</p></article>
         </div>
       </div>
     </section>
@@ -168,27 +182,27 @@
     <section class="section security">
       <div class="container security-card">
         <div>
-          <div class="eyebrow">BUILT AROUND YOUR VAULT</div>
-          <h2>Your password manager should stay your password manager.</h2>
-          <p>ChromeKeePass is intended to act as a browser companion, not replace your KeePass database with another account or hosted vault.</p>
+          <div class="eyebrow">LOCAL-FIRST</div>
+          <h2>Your password manager stays your password manager.</h2>
+          <p>ChromeKeePass acts as a browser companion. It does not replace your KeePass database with a ChromeKeePass account or hosted password vault.</p>
         </div>
         <div class="security-list">
-          <div><span>01</span><p><b>No forced account</b><small>No separate ChromeKeePass account is planned.</small></p></div>
-          <div><span>02</span><p><b>Minimal permissions</b><small>We aim to request only what the extension needs.</small></p></div>
-          <div><span>03</span><p><b>Clear privacy policy</b><small>How data is handled will be documented before release.</small></p></div>
+          <div><span>01</span><p><b>No ChromeKeePass cloud vault</b><small>Your KeePass database remains on the setup you control.</small></p></div>
+          <div><span>02</span><p><b>Passwords generated locally</b><small>The generator runs inside the extension and does not send generated passwords to ChromeKeePass servers.</small></p></div>
+          <div><span>03</span><p><b>Transparent privacy policy</b><small>Permissions, local processing, clipboard use and KeePass integration are documented publicly.</small></p></div>
         </div>
       </div>
     </section>
 
-    <section class="section early" id="early-access">
+    <section class="section early" id="release">
       <div class="container">
-        <div class="early-card">
+        <div class="early-card review-card">
           <div class="glow"></div>
-          <div class="eyebrow light"><span class="dot"></span> IN DEVELOPMENT</div>
-          <h2>ChromeKeePass is coming back,<br>built for a cleaner experience.</h2>
-          <p>The new Chrome extension is in preparation. Bookmark this page and check back for the first release.</p>
-          <button class="btn btn-light" type="button" id="copyUrl">Copy website URL</button>
-          <small id="copyState">chromekeepass.com</small>
+          <div class="eyebrow light"><span class="dot"></span> READY · UNDER REVIEW</div>
+          <h2>ChromeKeePass v0.3 is ready.<br>Chrome Web Store approval is the last step.</h2>
+          <p>The extension has been submitted for review. As soon as Google approves the listing, the official install button on this page will link directly to the Chrome Web Store.</p>
+          <span class="btn btn-light status-button" aria-disabled="true">Awaiting Chrome Web Store approval</span>
+          <small>ChromeKeePass v0.3.0 · Submitted September 15, 2026</small>
         </div>
       </div>
     </section>
@@ -197,9 +211,11 @@
       <div class="container faq-grid">
         <div class="section-head"><div class="eyebrow">FAQ</div><h2>Good to know.</h2></div>
         <div class="accordion">
-          <details open><summary>Is the Chrome extension available now?<span>+</span></summary><p>Not yet. The new ChromeKeePass extension is currently in preparation. The download button will appear here when it is published.</p></details>
+          <details open><summary>Can I install ChromeKeePass now?<span>+</span></summary><p>The extension is finished and has been submitted to the Chrome Web Store. The public install link will be added here as soon as the listing is approved.</p></details>
+          <details><summary>Does ChromeKeePass work without KeePass?<span>+</span></summary><p>Yes. The secure password generator and signup password suggestions work without a KeePass connection.</p></details>
+          <details><summary>How does KeePass integration work?<span>+</span></summary><p>ChromeKeePass connects to a KeePassHttp service running locally on your computer. Once paired, it can retrieve matching credentials for the current website and fill them when you choose an entry.</p></details>
+          <details><summary>Does ChromeKeePass send my passwords to a server?<span>+</span></summary><p>ChromeKeePass does not operate a cloud password vault. Generated passwords are created locally, and KeePass communication is with the KeePassHttp service on your own computer.</p></details>
           <details><summary>Is ChromeKeePass affiliated with Google?<span>+</span></summary><p>No. ChromeKeePass is an independent project and is not affiliated with or endorsed by Google.</p></details>
-          <details><summary>Will ChromeKeePass replace KeePass?<span>+</span></summary><p>No. The goal is to provide a convenient browser companion for a KeePass-based workflow.</p></details>
         </div>
       </div>
     </section>
@@ -207,8 +223,8 @@
 
   <footer>
     <div class="container footer-grid">
-      <div><a class="brand" href="/"><span class="brand-mark small">K</span><span>ChromeKeePass</span></a><p>A simpler bridge between KeePass and Chrome.</p></div>
-      <div class="footer-links"><a href="/privacy/">Privacy</a><a href="/terms.html">Terms</a><a href="/sitemap.xml">Sitemap</a></div>
+      <div><a class="brand" href="/"><span class="brand-mark small">K</span><span>ChromeKeePass</span></a><p>KeePass autofill and secure password generation for Chrome.</p></div>
+      <div class="footer-links"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/sitemap.xml">Sitemap</a></div>
     </div>
     <div class="container footer-bottom"><span>© <span id="year"></span> ChromeKeePass.</span><span>Independent project. Not affiliated with Google.</span></div>
   </footer>

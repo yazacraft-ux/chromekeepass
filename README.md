@@ -2,18 +2,21 @@
 
 Static website for ChromeKeePass, ready for GitHub Pages.
 
+## Current extension status
+- ChromeKeePass version: `0.3.0`
+- Chrome Web Store status: submitted / awaiting approval
+- Public store URL: not available yet
+
+When the Chrome Web Store listing is approved, update the header CTA, hero CTA, release section, FAQ, and add the official Web Store URL to the site metadata/structured data.
+
 ## Deploy on GitHub Pages
 1. Upload every file and folder in this repository to the repository root.
 2. In GitHub: Settings → Pages.
 3. Deploy from the `main` branch and `/ (root)`.
 4. The included `CNAME` points to `chromekeepass.com`.
 
-## DNS
-Point the domain to GitHub Pages according to GitHub's current custom-domain instructions.
-
-## Before releasing the Chrome extension
-Update:
-- The “Coming soon” buttons on `index.html`.
-- `privacy/index.html` (public URL: `https://chromekeepass.com/privacy/`) with the extension's exact permissions/data handling.
-- `terms.html` if needed.
-- Add the Chrome Web Store URL to the header and hero.
+## Public URLs
+- Home: `https://chromekeepass.com/`
+- Privacy: `https://chromekeepass.com/privacy/`
+- Terms: `https://chromekeepass.com/terms/`
+- Sitemap: `https://chromekeepass.com/sitemap.xml`
