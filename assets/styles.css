@@ -9,3 +9,8 @@
 .review-dot{background:#f3c969;box-shadow:0 0 0 5px rgba(243,201,105,.10)}
 .review-card{background:linear-gradient(135deg,#71e493 0%,#95efae 100%)}
 .status-button{cursor:default;user-select:none;opacity:.92}
+
+/* Chrome Web Store live + dedicated extension page */
+.extension-page-grid{align-items:stretch}.extension-summary-card{padding:36px;gap:34px;grid-template-columns:1fr}.extension-summary-card h2{font-size:clamp(34px,4vw,52px)}.extension-install-cta{display:flex;justify-content:center;margin-top:46px}.mobile-menu a[href*="chromewebstore"]{color:var(--green);font-weight:800}.nav-cta:hover{border-color:#71e493;color:#71e493}.early-card .btn-light{margin-top:2px}
+@media(max-width:900px){.extension-page-grid{grid-template-columns:1fr}.extension-summary-card{margin-top:12px}}
+@media(max-width:620px){.extension-summary-card{padding:24px}.extension-install-cta .btn{width:100%}}

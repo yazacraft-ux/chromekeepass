@@ -4,10 +4,10 @@ Static website for ChromeKeePass, ready for GitHub Pages.
 
 ## Current extension status
 - ChromeKeePass version: `0.3.0`
-- Chrome Web Store status: submitted / awaiting approval
+- Chrome Web Store status: approved / publicly available
 - Public store URL: not available yet
 
-When the Chrome Web Store listing is approved, update the header CTA, hero CTA, release section, FAQ, and add the official Web Store URL to the site metadata/structured data.
+Official Chrome Web Store listing: https://chromewebstore.google.com/detail/cpjcaabhelajbdeekeffbkckmcagmgfl
 
 ## Deploy on GitHub Pages
 1. Upload every file and folder in this repository to the repository root.
