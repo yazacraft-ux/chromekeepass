@@ -1,4 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&display=swap');
+/* Polices hébergées sur le site — aucun appel à un serveur tiers. */
+
+@font-face{
+  font-family:"Inter";
+  src:url("/assets/fonts/inter-variable.woff2") format("woff2");
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Inter Display";
+  src:url("/assets/fonts/inter-display-semibold.woff2") format("woff2");
+  font-weight:600;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Inter Display";
+  src:url("/assets/fonts/inter-display-bold.woff2") format("woff2");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
 
 /* ============================================================
    ChromeKeePass — design system
@@ -55,7 +77,7 @@ button{font:inherit}
 
 .container{width:min(var(--max),calc(100% - 44px));margin-inline:auto}
 
-h1,h2,h3,.brand,.btn,.demo-logo{font-family:"Inter Tight",Inter,system-ui,sans-serif}
+h1,h2,h3,.brand,.btn,.demo-logo{font-family:"Inter Display",Inter,system-ui,sans-serif}
 
 .noise{
   position:fixed;inset:0;pointer-events:none;opacity:.022;z-index:100;
@@ -428,7 +450,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 20px;background:var(--ink
 
 .not-found{min-height:calc(100vh - 63px);display:grid;place-items:center;text-align:center;padding:40px}
 .not-found .code{
-  font-family:"Inter Tight",Inter,sans-serif;
+  font-family:"Inter Display",Inter,sans-serif;
   font-size:clamp(110px,20vw,220px);font-weight:700;
   letter-spacing:-.07em;color:#0f1614;line-height:.75;
 }
