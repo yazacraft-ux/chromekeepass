@@ -6,20 +6,20 @@
    ============================================================ */
 
 :root{
-  --ink:#070908;
-  --ink-2:#0a0d0c;
-  --surface:#0e1211;
-  --surface-2:#121716;
-  --surface-3:#171d1b;
+  --ink:#030504;
+  --ink-2:#070908;
+  --surface:#0a0d0c;
+  --surface-2:#0e1211;
+  --surface-3:#131816;
 
-  --line:#1b2220;
-  --line-2:#232b28;
-  --hair:rgba(255,255,255,.055);
+  --line:#1a211e;
+  --line-2:#252e2a;
+  --hair:rgba(255,255,255,.065);
 
-  --text:#edf1ef;
-  --text-2:#b0bab5;
-  --muted:#7b8781;
-  --faint:#5a645f;
+  --text:#f6f9f7;
+  --text-2:#b6c0bb;
+  --muted:#828e88;
+  --faint:#5d675f;
 
   --jade:#67d99b;
   --jade-soft:#8ee7b5;
@@ -66,7 +66,7 @@ h1,h2,h3,.brand,.btn,.demo-logo{font-family:"Inter Tight",Inter,system-ui,sans-s
 
 .site-header{
   position:sticky;top:0;z-index:50;
-  background:rgba(7,9,8,.72);
+  background:rgba(3,5,4,.78);
   backdrop-filter:blur(20px) saturate(140%);
   border-bottom:1px solid var(--hair);
 }
@@ -131,8 +131,8 @@ h1,h2,h3,.brand,.btn,.demo-logo{font-family:"Inter Tight",Inter,system-ui,sans-s
 .hero:before{
   content:"";position:absolute;inset:0;pointer-events:none;
   background-image:
-    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+    linear-gradient(rgba(255,255,255,.024) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.024) 1px,transparent 1px);
   background-size:46px 46px;
   mask-image:linear-gradient(to bottom,#000,transparent 72%);
   -webkit-mask-image:linear-gradient(to bottom,#000,transparent 72%);
@@ -164,7 +164,7 @@ h1{
   line-height:1.03;letter-spacing:-.04em;font-weight:600;
   margin:18px 0 18px;
 }
-h1 span{color:rgba(237,241,239,.42)}
+h1 span{color:rgba(246,249,247,.38)}
 
 .hero-lead{
   font-size:16px;line-height:1.62;color:var(--text-2);
@@ -193,13 +193,13 @@ h1 span{color:rgba(237,241,239,.42)}
 }
 .browser-top>span{width:7px;height:7px;border-radius:50%;background:#3a4640}
 .address{
-  margin-left:10px;background:#141a18;border:1px solid var(--line);
+  margin-left:10px;background:#0f1413;border:1px solid var(--line);
   border-radius:6px;width:66%;height:25px;display:flex;align-items:center;
   padding:0 11px;color:var(--faint);font-size:10px;
 }
 .demo-page{
   height:355px;border-radius:0 0 var(--r-lg) var(--r-lg);
-  background:linear-gradient(160deg,#0c110f,#141b18);
+  background:linear-gradient(160deg,#070b09,#101614);
   display:flex;flex-direction:column;align-items:center;padding-top:42px;
 }
 .demo-logo{font-weight:700;letter-spacing:.24em;color:#4c574f;font-size:11px}
@@ -220,7 +220,7 @@ h1 span{color:rgba(237,241,239,.42)}
 
 .extension-popover{
   position:absolute;right:-30px;top:76px;width:296px;
-  background:rgba(12,17,14,.96);border:1px solid #2c3832;
+  background:rgba(8,12,10,.96);border:1px solid #2c3832;
   border-radius:var(--r-md);
   box-shadow:0 26px 60px -20px rgba(0,0,0,.85);
   padding:14px;backdrop-filter:blur(8px);
@@ -263,7 +263,7 @@ h1 span{color:rgba(237,241,239,.42)}
 .float-chip{
   position:absolute;padding:7px 12px;
   border:1px solid var(--line-2);border-radius:999px;
-  background:rgba(14,18,17,.92);color:var(--text-2);
+  background:rgba(8,11,10,.94);color:var(--text-2);
   font-size:10px;font-weight:500;backdrop-filter:blur(6px);
 }
 .chip-one{left:2px;bottom:44px}
@@ -430,7 +430,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 20px;background:var(--ink
 .not-found .code{
   font-family:"Inter Tight",Inter,sans-serif;
   font-size:clamp(110px,20vw,220px);font-weight:700;
-  letter-spacing:-.07em;color:#111917;line-height:.75;
+  letter-spacing:-.07em;color:#0f1614;line-height:.75;
 }
 .not-found h1{font-size:clamp(30px,4vw,40px);margin:24px 0 10px}
 .not-found p{color:var(--muted);max-width:44ch;margin:0 auto 24px;font-size:14.5px}
@@ -443,6 +443,21 @@ footer{border-top:1px solid var(--line);padding:44px 0 20px;background:var(--ink
 .extension-install-cta{display:flex;justify-content:center;margin-top:36px}
 .review-dot{background:var(--jade)}
 .status-button{cursor:default;user-select:none}
+
+
+/* ---------- Icônes tracées --------------------------------- */
+
+.icon{color:var(--text)}
+.icon svg{width:19px;height:19px;display:block}
+.feature-card.featured .icon{
+  color:var(--jade);
+  background:rgba(103,217,155,.07);
+  border-color:rgba(103,217,155,.26);
+}
+.float-chip{display:inline-flex;align-items:center;gap:7px}
+.float-chip svg{width:13px;height:13px;color:var(--jade);flex:none}
+.pop-foot span{display:inline-flex;align-items:center;gap:5px}
+.pop-foot svg{width:10px;height:10px;color:var(--jade);flex:none}
 
 /* ---------- Responsive ------------------------------------- */
 
